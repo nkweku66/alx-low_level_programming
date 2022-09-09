@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - prints the statment of the file
  * Return: 1 upon completion of the run of the code
