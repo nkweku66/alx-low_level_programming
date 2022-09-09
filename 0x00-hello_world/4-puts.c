@@ -1,11 +1,17 @@
 #include <stdio.h>
+
 /*
- * this makes a c file that ptints out a description
+ *
+ * main - prints the phrase "Programming is like building a multilingual puzzle
+ * 
+ * Return: 0
+ *
  */
+
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
-	return(0);
+	puts(\"Programming is like building a multilingual puzzle\n");
+	return (0);
 
 }
 
