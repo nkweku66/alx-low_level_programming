@@ -10,10 +10,10 @@ int main(void)
 	int i;
 	float d;
 
-	printf("size of a char is: %lu. \n byte(s)",sizeof(c));
-	printf("size of a char is: %lu. \n byte(s)",sizeof(i));
-	printf("size of a char is: %lu. \n byte(s)",(unsigned long)sizeof(i));
-	printf("size of a char is: %lu. \n byte(s)",(unsigned long long)sizeof(i));
-	printf("size of a float is: %lu. \n byte(s)",(unsigned long)sizeof(d));
+	printf("Size of a char is: %lu. \n byte(s)", sizeof(c));
+	printf("Size of a char is: %lu. \n byte(s)", sizeof(i));
+	printf("Size of a char is: %lu. \n byte(s)", (unsigned long)sizeof(i));
+	printf("Size of a char is: %lu. \n byte(s)", (unsigned long long)sizeof(i));
+	printf("Size of a float is: %lu. \n byte(s)", (unsigned long)sizeof(d));
 	return (0);
 }
