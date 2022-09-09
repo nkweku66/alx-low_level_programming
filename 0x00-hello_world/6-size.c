@@ -3,16 +3,12 @@
  * main - prints sizes of the various data types
  * Return: 0 upon completion of the run of code
  */
-int main()
+int main(void)
 {
-	char c;
-	int i;
-	double d;
-	float f;
-
-	//sizes evaluate the size of a variable
-	printf("Size of a char: %zu bytes(s)\n", sizeof(c));
-	printf("Size of a int: %zu bytes(s)\n", sizeof(i));
-	printf("Size of a long int: %zu bytes(s)\n", (long)sizeof(i));
-	printf("Size of a long long int: %zu bytes(s)\n", (long long)sizeof(d));
-	printf("Size of a float: %zu bytes(s)\n", sizeof(f));
+	printf("Size of a char: %d byte(s)\n", sizeof(char));
+	printf("Size of an int: %d byte(s)\n", sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %d byte(s)\n", sizeof(float));
+	return (0);
+}
