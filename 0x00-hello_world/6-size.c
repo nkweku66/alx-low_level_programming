@@ -8,12 +8,12 @@ int main(void)
 {
 	char c;
 	int i;
-	double d;
+	float d;
 
-	printf("size of a char is: %lu. \n",sizeof(c));
-	printf("size of a char is: %lu. \n",sizeof(i));
-	printf("size of a char is: %lu. \n",(unsigned long)sizeof(i));
-	printf("size of a char is: %lu. \n",(unsigned long long)sizeof(i));
-	printf("size of a float is: %lu. \n",(float)sizeof(d));
+	printf("size of a char is: %lu. \n byte(s)",sizeof(c));
+	printf("size of a char is: %lu. \n byte(s)",sizeof(i));
+	printf("size of a char is: %lu. \n byte(s)",(unsigned long)sizeof(i));
+	printf("size of a char is: %lu. \n byte(s)",(unsigned long long)sizeof(i));
+	printf("size of a float is: %lu. \n byte(s)",(unsigned long)sizeof(d));
 	return (0);
 }
