@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * main - contains the functions to convert the  alphabets to lowercase
- * Return 0 :prints out the final results and returns nothing
+ * print_alphabet prints out the alphabets in lower cases
  */
-
-void print_alphabet(void)
+ 
+ void print_alphabet(void)
 {
 	char ch;
 
