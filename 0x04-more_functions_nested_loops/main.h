@@ -4,6 +4,7 @@
 #include <stdio.h>
 void print_triangle(int size);
 int _isupper(int c);
+int _isdigit(int c);
 #endif
 
 
