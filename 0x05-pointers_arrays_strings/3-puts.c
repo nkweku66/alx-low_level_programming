@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _putgs -print the string
+ * _puts -print the string
  * @str: string
  */
 
