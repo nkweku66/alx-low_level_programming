@@ -13,6 +13,7 @@ void rev_string(char *s)
 	len = 0;
 
 	while (s[len] != '\0')
+	{
 		len++;
 		len--;
 		for (count = 0; count <= len/2; count++)
@@ -22,4 +23,5 @@ void rev_string(char *s)
 			s[count] = end;
 			s[len - count] = beg;
 		}
+	}
 }
