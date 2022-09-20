@@ -1,4 +1,4 @@
-#nclude "main.h"
+#include "main.h"
 /**
  * _putgs -print the string
  * @str: string
