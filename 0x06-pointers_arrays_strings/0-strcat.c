@@ -1,6 +1,5 @@
 #include "main.h"
 
-?
 /**
  * _strcat - concantenates the strings
  * @dest: contains first string
