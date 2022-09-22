@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncat- to concatenate strings
+ * _strncat - concatenate strings
  * @dest: first string
  * @src: second string
  * @n: the limit of bytes
