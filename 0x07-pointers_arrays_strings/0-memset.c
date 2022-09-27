@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - sets the memory 
+ * _memset - sets the memory
  * @s: a pointer
  * @b: a byte
  * @n: the number of bytes
