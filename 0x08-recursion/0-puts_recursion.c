@@ -10,7 +10,7 @@
 
 void _puts_recursion(char *s)
 {
-	if ( (s => 65 && s =< 90) || (s => 97 && s =< 122))
+	if (sizeof(*s) == sizeof(char))
 	{
 		_putchar("%s \n", s);
 	}
