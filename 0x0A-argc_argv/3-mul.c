@@ -7,7 +7,7 @@
  * @argc: contains the number of arguments
  * @argv: contains the arguments in string format
  *
- * Return: 1 upon failure
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
@@ -24,5 +24,5 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 	}
-	return (1);
+	return (0);
 }
