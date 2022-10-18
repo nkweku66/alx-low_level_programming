@@ -16,12 +16,9 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			a = atoi(argv[i]); 
-			b = atoi(argv[i + 1]);
-			printf("%d\n", (a * b));
-		}
+		a = atoi(argv[i]);
+		b = atoi(argv[i + 1]);
+		printf("%d\n", (a * b));
 	}
 	else
 	{
