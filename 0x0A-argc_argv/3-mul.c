@@ -14,11 +14,9 @@ int main(int argc, char *argv[])
 {
 	int i, a, b, mul;
 
-	argc -= argc;
-
 	if (argc == 3)
 	{
-		for (i = 0; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
 			a = atoi(argv[i]);
 			b = atoi(argv[i + 1]);
