@@ -12,12 +12,12 @@
 
 int main(int argc, char *argv[])
 {
-	int i, a = 0, b = 0;
+	int a = 0, b = 0;
 
 	if (argc == 3)
 	{
-		a = atoi(argv[i]);
-		b = atoi(argv[i + 1]);
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
 		printf("%d\n", (a * b));
 	}
 	else
