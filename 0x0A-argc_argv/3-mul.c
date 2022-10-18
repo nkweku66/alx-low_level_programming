@@ -12,15 +12,13 @@
 
 int main(int argc, char *argv[])
 {
-	int i, a, b, mul;
+	int i, mul;
 
 	if (argc == 3)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			a = atoi(argv[i]);
-			b = atoi(argv[i + 1]);
-			mul = a * b;
+			mul = atoi(argv[i]) * atoi(argv[i + 1]);
 			printf("%d\n", mul);
 		}
 	}
