@@ -13,18 +13,17 @@ int main(void)
 {
 	int n;
 	int d;
-	char stg;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	d = Math.abs(n % 10);
-	stg = "Last digit of";
+	d = abs(n % 10);
+	char stg[] = "Last digit of";
 
         if (d > 5)
         {
                 printf("%s %d is %d and is greater than 5\n", stg, n, d);
         }
-        else if (d < 6 && !=0)
+        else if (d < 6 && d != 0)
         {
 		printf("%s %d is %d and is less than 6 and not 0\n", stg, n, d);
         }
