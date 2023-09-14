@@ -9,12 +9,12 @@
 
 int main(void)
 {
-	char a = 'a';
-	char b = 'z';
+	int a = 97;
+	int b = 122;
 
-	for (; a <= b; a++)
+	for (; a >= b; a++)
 	{
-		if (a != 'e' && a != 'q')
+		if (a != 101 && a != 113)
 		{
 			putchar(a);
 		}
