@@ -11,13 +11,13 @@
 
 int main(void)
 {
+	char stg[] = "Last digit of";
 	int n;
 	int d;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	d = abs(n % 10);
-	char stg[] = "Last digit of";
 
         if (d > 5)
         {
