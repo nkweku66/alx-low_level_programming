@@ -12,10 +12,12 @@
 int main(void)
 {
 	int n;
+	int d;
+	char stg;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	d =Math.abs(n % 10);
+	d = Math.abs(n % 10);
 	stg = "Last digit of";
 
         if (d > 5)
