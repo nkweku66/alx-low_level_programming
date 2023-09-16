@@ -1,0 +1,21 @@
+#include "main.h"
+
+/**
+ * print_alphabet - prints the alphabets in lowercase
+ *
+ * Return: 0 on success
+ * Author - Nana Obeng
+ */
+
+void print_alphabet(void)
+{
+	int a;
+
+	while (a <= 122)
+	{
+		_putchar(a);
+		a++;
+	}
+	_putchar('\n');
+	return (0);
+}
