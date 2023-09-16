@@ -2,8 +2,6 @@
 
 /**
  * print_alphabet - prints the alphabets in lowercase
- *
- * Return: 0 on success
  * Author - Nana Obeng
  */
 
@@ -17,5 +15,4 @@ void print_alphabet(void)
 		a++;
 	}
 	_putchar('\n');
-	return (0);
 }
