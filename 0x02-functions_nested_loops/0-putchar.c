@@ -11,7 +11,7 @@
 int main(void)
 {
 	char txt[] = "_putchar";
-	int len = sizeof(txt) / sizeof(txt[1]);
+	int len = sizeof(txt) / sizeof(txt[0]) - 1;
 	int i;
 
 	for (i = 0; i < len; i++)
