@@ -7,7 +7,7 @@
 
 void print_alphabet_x10(void)
 {
-	int a = 97, b = 10;
+	int a = 97, b;
 
 	while (b <= 10)
 	{
