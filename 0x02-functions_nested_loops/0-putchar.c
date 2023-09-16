@@ -14,7 +14,7 @@ int main(void)
 	int len = sizeof(txt) / sizeof(txt[0]);
 	int i;
 
-	for (i = 0; i <= len; i++)
+	for (i = 0; i < len; i++)
 	{
 		_putchar(txt[i]);
 	}
