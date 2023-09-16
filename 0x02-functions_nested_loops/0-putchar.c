@@ -10,6 +10,14 @@
 
 int main(void)
 {
-	_putchar("_putchar");
+	char txt[] = "_putchar";
+	int len = sizeof(txt) / sizeof(txt[0]);
+	int i;
+
+	for (i = 0; i <= len; i++)
+	{
+		_putchar(txt[i]);
+	}
+	_putchar('\n');
 	return (0);
 }
