@@ -5,7 +5,6 @@
  * _abs - returns the absolute a number
  * @n: argument
  *
- * Return: 0 on success
  * Author - Nana Obeng
  */
 
@@ -20,5 +19,4 @@ int _abs(int n)
 	{
 		_putchar(n);
 	}
-	return (0);
 }
