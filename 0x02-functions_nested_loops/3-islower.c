@@ -4,8 +4,7 @@
  * _islower - checks for lowercase
  * @c: argument
  *
- * Return: 1 on success
- * Return: 0 on failure
+ * Return: 1 on success and 0 otherwise
  * Author - Nana Obeng
  */
 
