@@ -1,1 +1,1 @@
-a repository for c programs
+working with c
