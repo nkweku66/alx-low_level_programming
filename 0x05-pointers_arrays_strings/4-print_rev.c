@@ -8,11 +8,18 @@
 
 void print_rev(char *s)
 {
-	if (*s == '\0')
+	char *lv = s;
+
+	while (*lv != '\0')
 	{
-		_putchar('\n');
-		return;
+	    lv++;
 	}
-	print_rev(s + 1);
-	_putchar(*s);
+	lv--;
+
+	while (lv >= s)
+	{
+		_putchar(*lv);
+		lv--;
+	}
+	_putchar('\n');
 }
