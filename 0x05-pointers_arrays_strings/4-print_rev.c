@@ -12,8 +12,9 @@ void print_rev(char *s)
 
 	while (*lv != '\0')
 	{
-	    lv++;
+		lv++;
 	}
+
 	lv--;
 
 	while (lv >= s)
