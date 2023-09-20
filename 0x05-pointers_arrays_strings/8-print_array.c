@@ -8,7 +8,7 @@
  * Author - Nana Obeng
  */
 
-void print_array(int a*, int n)
+void print_array(int *a, int n)
 {
 	for (int i; i < n; i++)
 	{
