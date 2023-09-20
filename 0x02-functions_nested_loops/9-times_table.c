@@ -10,11 +10,11 @@ void times_table(void)
 {
 	int a = 0, b, c, d, e;
 
-	while(a <= 9)
+	while (a <= 9)
 	{
 		b = 0;
 
-		while(b <= 9)
+		while (b <= 9)
 		{
 			c = a * b;
 
@@ -26,7 +26,7 @@ void times_table(void)
 				}
 			}
 
-			if ( c > 9)
+			if (c > 9)
 			{
 				d = (c / 10);
 				e = (c % 10);
