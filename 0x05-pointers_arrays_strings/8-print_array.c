@@ -10,7 +10,9 @@
 
 void print_array(int *a, int n)
 {
-	for (int i; i < n; i++)
+	int i;
+
+	for (; i < n; i++)
 	{
 		printf("%d", a[i]);
 
