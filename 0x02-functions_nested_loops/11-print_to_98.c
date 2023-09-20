@@ -9,53 +9,44 @@
 
 void print_to_98(int n)
 {
-	int a = 0, b = 0, c;
+	int inc = (n <= 98) ? 1 : -1;
 
-	while (n <= 98)
+	if (n <= 98)
+	{
+		inc = 1;
+	}
+	else
+	{
+		inc = -1;
+	}
+
+	while (n != 98)
 	{
 		if (n < 0)
 		{
-			c = n * -1;
-			a = c / 10;
-			b = c % 10;
-
 			_putchar('-');
-
-			if (a != 0)
-			{
-				_putchar(a + '0');
-				_putchar(b + '0');
-
-				if (a == 9 && b == 8)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-			}
-			else
-			{
-				_putchar(b + '0');
-			}
+			n = -n;
 		}
-		else if (n > 9)
+
+		if (n >= 100)
 		{
-			a = n / 10;
-			b = n % 10;
-
-			_putchar(a + '0');
-			_putchar(b + '0');
-		}
-		else
-		{
-			_putchar(n + '0');
+			_putchar((n / 100) + '0');
 		}
 
-		if (a < 9 || b < 8)
+		_putchar((n / 10) % 10 + '0');
+		_putchar((n % 10) + '0');
+
+		if (n != 98)
 		{
 			_putchar(',');
 			_putchar(' ');
 		}
-		n++;
+		n += inc;
+
+		if (n < 98 && increment == -1)
+		{
+			break;
+		}
 	}
 	_putchar('\n');
 }
