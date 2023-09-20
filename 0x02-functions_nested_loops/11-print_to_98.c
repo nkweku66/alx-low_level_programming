@@ -43,7 +43,7 @@ void print_to_98(int n)
 		}
 		n += inc;
 
-		if (n < 98 && increment == -1)
+		if (n < 98 && inc == -1)
 		{
 			break;
 		}
