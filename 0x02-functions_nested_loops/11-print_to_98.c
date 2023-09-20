@@ -10,7 +10,7 @@
 void print_to_98(int n)
 {
 	int a = 0, b = 0;
-	
+
 	while (n <= 98)
 	{
 		if (n > 9)
@@ -31,6 +31,7 @@ void print_to_98(int n)
 			_putchar(',');
 			_putchar(' ');
 		}
+		_putchar('\n');
 		n++;
 	}
 }
