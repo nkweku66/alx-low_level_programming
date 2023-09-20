@@ -25,6 +25,12 @@ void print_to_98(int n)
 			{
 				_putchar(a + '0');
 				_putchar(b + '0');
+
+				if (a == 9 && b == 8)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 			else
 			{
