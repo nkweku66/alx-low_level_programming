@@ -4,7 +4,7 @@
  * *_strncat - concatenates
  * @dest: destination
  * @src: source
- *
+ * @n: param
  * Return: results
  * Author - Nana Obeng
  */
