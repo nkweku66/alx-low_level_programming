@@ -17,20 +17,22 @@ int _atoi(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == '-')
+		char c = s[i];
+
+		if (c == '-')
 		{
 			sign *= -1;
 		}
-		else if (s[i] >= '0' && s[i] <= '9')
+		else if (c >= '0' && c <= '9')
 		{
-			int digit = s[i] - '0';
+			int digit = c - '0';
 
 			if (result > (INT_MAX - digit) / 10)
 			{
 				return INT_MIN;
 			}
 
-			result = result * 10 + (s[i] - '0');
+			result = result * 10 + digit;
 			found_digit = 1;
 		}
 		else if (found_digit)
