@@ -13,11 +13,11 @@ int _atoi(char *s)
 	int result = 0;
 	int sign = 1;
 	int found_digit = 0;
-	int i;
+	int i = 0;
 	int digit = 0;
 	char c = s[i];
 
-	for (i = 0; c != '\0'; i++)
+	for (; c != '\0'; i++)
 	{
 		if (c == '-')
 		{
