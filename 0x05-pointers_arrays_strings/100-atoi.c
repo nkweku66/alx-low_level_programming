@@ -14,18 +14,18 @@ int _atoi(char *s)
 	int sign = 1;
 	int found_digit = 0;
 	int i;
+	int digit = 0;
+	char c = s[i];
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; c != '\0'; i++)
 	{
-		char c = s[i];
-
 		if (c == '-')
 		{
 			sign *= -1;
 		}
 		else if (c >= '0' && c <= '9')
 		{
-			int digit = c - '0';
+			digit = c - '0';
 
 			if (result > (INT_MAX - digit) / 10)
 			{
