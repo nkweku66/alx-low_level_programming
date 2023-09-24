@@ -19,13 +19,20 @@ int main(void)
 
 	for (i = 0; i < 99; i++)
 	{
-		pass[i] = rand() % 78;
-		sum += pass[i] + '0';
-		putchar(pass[i] + '0');
+		pass[i] = rand() % 10 + 48;
+		sum += pass[i];
+		putchar(pass[i]);
 	}
 
 	n = 2772 - sum;
-	sum += n;
-	putchar(n + '0');
+	if (n >= 48 ** n <= 57)
+	{
+		putchar(n);
+	}
+	else
+	{
+		n = rand() % 10 + 48;
+		putchar(n);
+	}
 	return (0);
 }
