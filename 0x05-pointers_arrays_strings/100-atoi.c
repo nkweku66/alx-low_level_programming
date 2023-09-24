@@ -13,12 +13,12 @@
 
 int _atoi_recursive(char *s, int sign, int result, int found_digit)
 {
+	char c = *s;
+
 	if (*s == '\0')
 	{
 		return found_digit ? result * sign : 0;
 	}
-
-	char c = *s;
 
 	if (c == ' ' || c == '\t' || c == '\n')
 	{
