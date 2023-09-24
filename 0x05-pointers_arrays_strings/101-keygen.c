@@ -25,7 +25,7 @@ int main(void)
 	}
 
 	n = 2772 - sum;
-	if (n >= 48 ** n <= 57)
+	if (n >= 48 && n <= 57)
 	{
 		putchar(n);
 	}
