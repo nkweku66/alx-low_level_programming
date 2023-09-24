@@ -1,5 +1,5 @@
 #include "main.h"
-#define INT_MIN (-2147483647 - 1)
+
 /**
  * _atoi - converts a string into an integer
  * @s: the string
