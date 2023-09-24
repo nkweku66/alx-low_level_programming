@@ -10,20 +10,26 @@
 
 int main(void)
 {
-	int sum = 0;
-	int target = 2772;
-	
+	int pass[100];
+	int i, sum, n;
+
+	sum = 0;
+
 	srand(time(NULL));
-	
-	while (sum < target)
+
+	for (i = 0; i < 100; i++)
 	{
-		int digit = rand() % 94 + 33;
-		
-		if (sum + digit <= target)
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - sum) - '0' < 78)
 		{
-			putchar(digit);
-			sum += digit;
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
 		}
 	}
+
 	return (0);
 }
