@@ -1,5 +1,5 @@
 #include "main.h"
-
+11;rgb:0000/0000/0000
 /**
  * main - prints first 50 fibonnaci numbers
  *
@@ -10,14 +10,14 @@
 int main(void)
 {
 	int num = 50, i;
-	long long int a = 1, b = 2, c;
+	unsigned int a = 1, b = 2, c;
 
-	printf("%lld, %lld", a, b);
+	printf("%u, %u", a, b);
 
 	for (i = 3; i <= num; ++i)
 	{
 		c = a + b;
-		printf(", %lld", c);
+		printf(", %u", c);
 		a = b;
 		b = c;
 	}
