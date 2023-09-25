@@ -9,44 +9,31 @@
 
 void print_to_98(int n)
 {
-	int inc = (n <= 98) ? 1 : -1;
-
+	int i;
+	
 	if (n <= 98)
 	{
-		inc = 1;
+		for (i = n; i <= 98; i++)
+		{
+			printf("%d", i);
+			
+			if (i != 98)
+			{
+				printf(", ");
+			}
+		}
 	}
 	else
 	{
-		inc = -1;
-	}
-
-	while (n != 98)
-	{
-		if (n < 0)
+		for (i = n; i >= 98; i--)
 		{
-			_putchar('-');
-			n = -n;
+			printf("%d", i);
+			
+			if (i != 98)
+			{
+				printf(", ");
+			}
 		}
-
-		if (n >= 100)
-		{
-			_putchar((n / 100) + '0');
-		}
-
-		_putchar((n / 10) % 10 + '0');
-		_putchar((n % 10) + '0');
-
-		if (n != 98)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-		n += inc;
-
-		if (n < 98 && inc == -1)
-		{
-			break;
-		}
-	}
-	_putchar('\n');
+        }
+	printf("\n");
 }
