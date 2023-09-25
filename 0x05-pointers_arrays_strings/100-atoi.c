@@ -1,57 +1,48 @@
 #include "main.h"
 
 /**
- * _atoi - converts a string into an integer
  * _atoi_recursive - recursive
  * @s: the string
- * @sign: sign
- * @result: results
- * @found_digit: found a digit
+ *
  * Return: 0
  * Author - Nana Obeng
  */
 
-int _atoi_recursive(char *s, int sign, int result, int found_digit)
-{
-	char c = *s;
-
-	if (*s == '\0')
-	{
-		return found_digit ? result * sign : 0;
-	}
-
-	if (c == ' ' || c == '\t' || c == '\n')
-	{
-		return _atoi_recursive(s + 1, sign, result, found_digit);
-	}
-	else if (c == '-')
-	{
-		return _atoi_recursive(s + 1, -1, result, found_digit);
-	}
-	else if (c == '+')
-	{
-		return _atoi_recursive(s + 1, 1, result, found_digit);
-	}
-	else if (c >= '0' && c <= '9')
-	{
-		int digit = c - '0';
-
-		if (result > (INT_MAX - digit) / 10)
-		{
-			return sign == -1 ? INT_MIN : INT_MAX;
-		}
-
-		result = result * 10 + digit;
-		found_digit = 1;
-		return _atoi_recursive(s + 1, sign, result, found_digit);
-	}
-	else
-	{
-		return found_digit ? result * sign : 0;
-	}
-}
-
 int _atoi(char *s)
 {
-	return _atoi_recursive(s, 1, 0, 0);
+	int i, d, n, len, f, digit;
+
+	i = 0;
+	d = 0;
+	n = 0;
+	len = 0;
+	f = 0;
+	digit = 0;
+
+	while (s[len] != '\0')
+		len++;
+
+	while (i < len && f == 0)
+	{
+		if (s[i] == '-')
+			++d;
+
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			digit = s[i] - '0';
+			if (d % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			f = 0;
+		}
+		i++;
+	}
+
+	if (f == 0)
+		return (0);
+
+	return (n);
 }
