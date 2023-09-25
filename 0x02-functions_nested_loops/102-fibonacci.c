@@ -10,7 +10,7 @@
 int main(void)
 {
 	int num = 50, i;
-	unsigned long long int a = 1, b = 2, c;
+	unsigned long a = 1, b = 2, c;
 
 	printf("%llu, %llu", a, b);
 
