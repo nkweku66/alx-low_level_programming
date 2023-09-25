@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _atoi_recursive - recursive
+ * _atoi - converts string to integer
  * @s: the string
  *
  * Return: 0
