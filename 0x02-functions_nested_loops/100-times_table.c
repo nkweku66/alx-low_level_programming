@@ -27,7 +27,14 @@ void print_times_table(int n)
 
 				if (result < 10)
 				{
-					printf("  %d", result);
+					if (j > 0)
+					{
+						printf("  %d", result);
+					}
+					else
+					{
+						printf("%d", result);
+					}
 				}
 				else if (result < 100)
 				{
