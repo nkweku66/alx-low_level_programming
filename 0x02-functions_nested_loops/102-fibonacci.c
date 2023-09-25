@@ -10,16 +10,17 @@
 int main(void)
 {
 	int num = 50, i;
-	unsigned int a = 1, b = 2, c;
+	unsigned long long int a = 1, b = 2, c;
 
-	printf("%u, %u", a, b);
+	printf("%llu, %llu", a, b);
 
 	for (i = 3; i <= num; ++i)
 	{
 		c = a + b;
-		printf(", %u", c);
+		printf(", %llu", c);
 		a = b;
 		b = c;
 	}
+	putchar('\n');
 	return (0);
 }
