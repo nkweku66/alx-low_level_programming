@@ -12,12 +12,12 @@ int main(void)
 	int num = 50, i;
 	unsigned long a = 1, b = 2, c;
 
-	printf("%llu, %llu", a, b);
+	printf("%lu, %lu", a, b);
 
 	for (i = 3; i <= num; ++i)
 	{
 		c = a + b;
-		printf(", %llu", c);
+		printf(", %lu", c);
 		a = b;
 		b = c;
 	}
