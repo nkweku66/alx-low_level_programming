@@ -9,10 +9,9 @@
 
 int main(void)
 {
-	int num = 4000000, i;
 	unsigned long a = 1, b = 2, c, d = 0;
 
-	while (a <= num)
+	while (a <= 4000000)
 	{
 		if (a % 2 == 0)
 		{
