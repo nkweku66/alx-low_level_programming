@@ -21,6 +21,6 @@ int main(void)
 		a = b;
 		b = c;
 	}
-	printf("%lu", d);
+	printf("%lu\n", d);
 	return (0);
 }
