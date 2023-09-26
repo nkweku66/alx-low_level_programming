@@ -15,7 +15,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s)
 	{
-		char *a = aacept;
+		char *a = accept;
 		char *current = s;
 
 		while (*a)
