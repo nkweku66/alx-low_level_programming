@@ -20,7 +20,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (*a == *current)
 			{
-				return current;
+				return (current);
 			}
 			a++;
 		}
