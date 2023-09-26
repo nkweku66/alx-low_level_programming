@@ -3,7 +3,7 @@
 /**
  * print_diagsums - sums the diagonal of a matrix
  * @a: first array
- * @b: second array
+ * @size: second array
  *
  * Author - Nana Obeng
  */
@@ -18,5 +18,5 @@ void print_diagsums(int *a, int size)
 
 		sum1 += a[i * size + (size - 1 - i)];
 	}
-	printf("%d, %d", sum, sum1);
+	printf("%d, %d\n", sum, sum1);
 }
