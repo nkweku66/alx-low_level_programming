@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ * _sqrt_recursion - finds the sqroot
+ * @n: number to find sqrt
+ *
+ * Return: n
+ * Author - Nana Obeng
+ */
+
+int checker(int n, int base)
+{
+	if (n * n == base)
+	{
+		return (n);
