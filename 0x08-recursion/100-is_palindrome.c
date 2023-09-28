@@ -48,11 +48,10 @@ int checks(char str[], int i)
 		{
 			return (1);
 		}
-		checks(str, i + 1);
+		return (checks(str, i + 1));
 	}
 	else
 	{
 		return (0);
 	}
-	return (0);
 }
