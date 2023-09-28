@@ -51,5 +51,8 @@ int checks(char str[], int i)
 		checks(str, i + 1);
 	}
 	else
+	{
 		return (0);
+	}
+	return (0);
 }
