@@ -1,0 +1,10 @@
+#include "main.h"
+
+/**
+ * _strlen - check string lenght
+ * @s: pointer
+ *
+ * Return: stringlen
+ */
+
+int _strlen(char *s);

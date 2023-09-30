@@ -1,0 +1,14 @@
+#include "main.h"
+
+/**
+ * *_strcpy - copy string
+ * @dest: dest
+ * @src: src
+ *
+ * Return: res
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+	
+}
