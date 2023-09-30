@@ -1,16 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (success)
+ * _puts - prints a string
+ * @str: string
+ * Author - Nana Obeng
  */
 
-int main(void)
+void _puts(char *str)
 {
-	char message[] = "\"Programming is like building a multilingual puzzle";
-
-	puts(message);
-
-	return (0);
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
 }

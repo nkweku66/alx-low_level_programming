@@ -7,4 +7,7 @@
  * Return: stringlen
  */
 
-int _strlen(char *s);
+int _strlen(char *s)
+{
+	return (*s);
+}
