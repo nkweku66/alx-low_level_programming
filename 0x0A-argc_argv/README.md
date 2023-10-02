@@ -15,8 +15,9 @@ and pass all necessary arguments to it.
 
 ## Files
 
-- 0-whatsmyname: prints the name of the program to shell
-- 1-args: prints the number or arguments to main
+- 0-whatsmyname.c: prints the name of the program to shell
+- 1-args.c: prints the number or arguments to main
+- 2-args.c: prints all the arguments on a new line
 
 ## Author
 
