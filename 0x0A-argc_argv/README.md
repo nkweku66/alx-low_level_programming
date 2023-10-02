@@ -15,7 +15,7 @@ and pass all necessary arguments to it.
 
 ## Files
 
-
+-0-whatsmyname - prints the name of the program to shell
 
 ## Author
 
