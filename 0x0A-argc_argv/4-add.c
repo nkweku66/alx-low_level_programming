@@ -1,31 +1,48 @@
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 
 /**
- * main - does multiplication
+ * main - adds numbers passed to main
  * @argc: argument count
- * @argv: array
+ * @argv: pointer to string argument
  *
- * Return: 0;
+ * Return: 0 on success
  * Author - Nana Obeng
  */
 
 int main(int argc, char *argv[])
 {
-	int i, mul = 1;
+	int i, sum = 0, num;
 
-	if (argc > 2 && argc <= 3)
+	if (argc >= 3)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			mul *= atoi(argv[i]);
+			num = atoi(argv[i]);
+
+			if (num != 0)
+			{
+				sum += num;
+			}
+			else
+			{
+				printf("Error\n");
+			}
 		}
-		printf("%d\n", mul);
+		if (num != 0)
+		{
+			printf("%d\n", sum);
+		}
+	}
+	else if (argc == 1)
+	{
+		printf("0\n");
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-	return (1);
+	return (0);
 }
