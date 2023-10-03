@@ -12,14 +12,15 @@
 
 int main(int argc, char *argv[])
 {
-        int n;
-        if (argc != 3)
-        {
-                printf("Error\n");
+	int n;
+
+	if (argc != 3)
+	{
+		printf("Error\n");
 		return (1);
-        }
+	}
 	n = atoi(argv[1]) * atoi(argv[2]);
 
 	printf("%d\n", n);
-        return (0);
+	return (0);
 }
