@@ -12,20 +12,16 @@
 
 int main(int argc, char *argv[])
 {
-	int i, mul = 1;
+        int n;
+        if (argc >= 3 && argc <= 3)
+        {
+                n = atoi(argv[1]) * atoi(argv[2]);
 
-	if ((argc - 1) == 2 )
-	{
-		for (i = 1; i < argc; i++)
-		{
-			mul *= atoi(argv[i]);
-		}
-		printf("%d\n", mul);
-	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
-	return (1);
+                printf("%d\n", n);
+        }
+        else
+        {
+                printf("Error\n");
+        }
+        return (1);
 }
