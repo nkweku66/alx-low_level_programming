@@ -1,5 +1,5 @@
 #include "main.h"
-0;276;0c
+
 /**
  * *create_array - creates an array
  * @size: len of the array
