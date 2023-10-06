@@ -9,7 +9,7 @@
 
 char *_strdup(char *str)
 {
-	if (str != '\0')
+	if (str != NULL)
 	{
 		char *ret =(char *)malloc(_strlen(str) + 1);
 
