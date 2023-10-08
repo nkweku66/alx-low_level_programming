@@ -2,7 +2,7 @@
 
 /**
  * *str_concat - to join string
- * @s1: destination
+11;rgb:0000/0000/0000* @s1: destination
  * @s2: source
  *
  * Return: string
@@ -33,12 +33,19 @@ char *str_concat(char *s1, char *s2)
 		}
 		strg[i] = '\0';
 		return (strg);
-		free(*strg);
+		free(strg);
 	}
-	return NULL;
+	return (NULL);
 }
+
+/**
+ * _strlen - check length of string
+ * @s: string
+ *
+ * Return: string
+ */
 
 int _strlen(char *s)
 {
-	return ((s != '\0') ? 1 + _strlen(s + 1) : 0);
+	return ((*s != '\0') ? 1 + _strlen(s + 1) : 0);
 }
