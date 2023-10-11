@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stddef.h>
 
 /**
  * print_dog - print content of d
@@ -20,7 +21,7 @@ void print_dog(struct dog *d)
 			printf("Name: (nil)\n");
 		}
 
-		if (d->age != (int)d->age)
+		if (d->age - (int)d->age != 0.0)
 		{
 			printf("Age: %f\n", d->age);
 		}
@@ -35,7 +36,7 @@ void print_dog(struct dog *d)
 		}
 		else
 		{
-			printf("Owner: (nil)");
+			printf("Owner: (nil)\n");
 		}
 	}
 }
