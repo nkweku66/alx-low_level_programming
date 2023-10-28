@@ -13,7 +13,8 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 0, num;
+	int i, sum = 0;
+	long num;
 
 	if (argc >= 3)
 	{
@@ -21,14 +22,17 @@ int main(int argc, char *argv[])
 		{
 			num = atoi(argv[i]);
 
-			if (num != 0)
+			if (num > 0)
 			{
-				sum += num;
+				if (num != 0)
+				{
+					sum += num;
+				}
 			}
 			else
 			{
 				printf("Error\n");
-				break;
+				return (1);
 			}
 		}
 		if (num != 0)
