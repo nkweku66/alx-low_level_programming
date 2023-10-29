@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * main - adds numbers passed to main
@@ -15,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	long sum = 0,num;
+	long sum = 0, num;
 	char *ptr;
 
 	if (argc >= 3)
@@ -30,23 +28,12 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 
-			if (num > 0)
+			if (num != 0)
 			{
-				if (num != 0)
-				{
-					sum += num;
-				}
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
+				sum += num;
 			}
 		}
-		if (num != 0)
-		{
-			printf("%ld\n", sum);
-		}
+		printf("%ld\n", sum);
 	}
 	else if (argc == 1)
 	{
