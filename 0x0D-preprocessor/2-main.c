@@ -2,7 +2,6 @@
 
 /**
  * main - prints file name
- * Return: 0
  * Author - Nana Obeng
  */
 
