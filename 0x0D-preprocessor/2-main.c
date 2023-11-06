@@ -9,5 +9,5 @@
 int main()
 {
 	printf("%s\n", __FILE__);
-	return (1);
+	return (0);
 }
