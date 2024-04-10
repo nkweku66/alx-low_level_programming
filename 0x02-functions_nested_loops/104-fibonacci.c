@@ -20,6 +20,6 @@ int main(void)
 		b = next;
 		count++;
 	}
-	printf("\n");
+	printf("%lu\n", next);
 	return (0);
 }
