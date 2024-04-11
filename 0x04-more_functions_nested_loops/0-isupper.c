@@ -4,7 +4,7 @@
 /**
  * _isupper - checks for uppercase characters
  * @c: the character
- * 
+ *
  * Return: 1 when correct and 0 otherwise
  */
 
