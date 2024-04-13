@@ -9,11 +9,11 @@
 
 void more_numbers(void)
 {
-	unsigned i, j, a, b;
+	unsigned int i, j, a, b;
 
-	for (i = 0; i <= 10; i++)
+	for (i = 0; i <= 10; ++i)
 	{
-		for (j = 0; j <= 14; j++)
+		for (j = 0; j <= 14; ++j)
 		{
 			a = j / 10 + '0';
 			b = j % 10 + '0';
