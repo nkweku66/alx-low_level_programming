@@ -15,7 +15,7 @@ void print_triangle(int size)
 	for (i = 1; i <= size; i++)
 	{
 		// Print the leading space
-		for (j = 1; j <= size - 1; j++)
+		for (j = 1; j <= size - i; j++)
 		{
 			_putchar(' ');
 		}
